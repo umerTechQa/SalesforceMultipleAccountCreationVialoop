@@ -1,0 +1,24 @@
+public class AccountHandler {
+    public static void insertAccount(Integer numnewAccounts){
+        
+        List<Account> addAccounts=new List<Account>();
+        integer n=0;
+        while(n <=numnewAccounts){
+            Account a=new Account();
+            a.Name='AccountEnglish' +n;
+            a.AccountNumber='Eng-1' +n;
+            a.Phone='222-99000';
+            a.Website='www.plumlogix.com' +n;
+            a.Type='Prospect' +n;
+            a.Fax='123-123' +n;
+            a.Rating='Hot' +n;
+            addAccounts.add(a); 
+            n++;
+        }
+        
+        insert addAccounts;
+        
+        
+    }
+
+}
